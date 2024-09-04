@@ -71,37 +71,143 @@ class TableViewController: UITableViewController {
 //    ]
     
     var arrayTours = [
-        Tours(counrty: "Япония", tour: "Весеннее цветение сакуры в Киото и Токио",description: "Описание: Посещение Киото и Токио во время цветения сакуры, с прогулками по храмам и традиционным японским садам.", image: "japan", image2: "japan2"),
-        Tours(counrty: "Италия", tour: "Романтическая Венеция и исторический Рим", description: "Описание: Путешествие по каналам Венеции, затем поездка в Рим для изучения древнеримских памятников.", image: "italy", image2: "italy2"),
-        Tours(counrty: "Франция", tour: "Париж и замки долины Луары", description: "Описание: Экскурсия по Парижу, включая Эйфелеву башню и Лувр, затем путешествие к великолепным замкам долины Луары.", image: "france", image2: "france2"),
-        Tours(counrty: "Исландия", tour: "Золотое кольцо и северное сияние", description: "Описание: Посещение знаменитого маршрута \"Золотое кольцо\", включая водопад Гюдльфосс и гейзеры, с шансом увидеть северное сияние.", image: "island", image2: "island2"),
-        Tours(counrty: "Новая Зеландия", tour: "Приключения на Южном острове и съемочные площадки \"Властелина колец\"", description: "Описание: Исследование живописных гор и озер Южного острова, а также посещение мест, где снимался \"Властелин колец\".", image: "new zealand", image2: "new zealand2"),
-        Tours(counrty: "Швейцария", tour: "Горные вершины и альпийские деревни", description: "Описание: Поездка по живописным альпийским маршрутам, включая подъем на горы Маттерхорн и Юнгфрау.", image: "switzerland", image2: "switzerland2"),
-        Tours(counrty: "Греция", tour: "Острова Санторини и Миконос", description: "Описание: Путешествие по живописным греческим островам с белыми домами, кристально чистыми пляжами и историческими руинами.", image: "greece", image2: "greece2"),
-        Tours(counrty: "Южная Африка", tour: "Сафари в Крюгер-Парке и винодельни Кейптауна", description: "Описание: Сафари в национальном парке Крюгер для наблюдения за \"большой пятеркой\" и посещение виноделен в окрестностях Кейптауна.", image: "uar", image2: "uar2"),
-        Tours(counrty: "Норвегия", tour: "Фьорды и Лофотенские острова", description: "Описание: Круиз по фьордам Западной Норвегии с посещением живописных Лофотенских островов.", image: "norway", image2: "norway2"),
-        Tours(counrty: "Перу", tour: "Мачу-Пикчу и Священная долина Инков", description: "Описание: Экскурсия к древним руинам Мачу-Пикчу и исследование Священной долины с остановками в древних инкских городах.", image: "peru", image2: "peru2")
+        Tours(
+            counrty: "Япония",
+            tour: "Весеннее цветение сакуры в Киото и Токио",
+            description: "Описание: Посещение Киото и Токио во время цветения сакуры, с прогулками по храмам и традиционным японским садам.",
+            image: "japan",
+            image2: "japan2",
+            timing: ""),
+        Tours(
+            counrty: "Италия",
+            tour: "Романтическая Венеция и исторический Рим",
+            description: "Описание: Путешествие по каналам Венеции, затем поездка в Рим для изучения древнеримских памятников.",
+            image: "italy",
+            image2: "italy2",
+            timing: ""),
+        Tours(
+            counrty: "Франция",
+            tour: "Париж и замки долины Луары",
+            description: "Описание: Экскурсия по Парижу, включая Эйфелеву башню и Лувр, затем путешествие к великолепным замкам долины Луары.",
+            image: "france",
+            image2: "france2",
+            timing: ""),
+        Tours(
+            counrty: "Исландия",
+            tour: "Золотое кольцо и северное сияние",
+            description: "Описание: Посещение знаменитого маршрута \"Золотое кольцо\", включая водопад Гюдльфосс и гейзеры, с шансом увидеть северное сияние.",
+            image: "island",
+            image2: "island2",
+            timing: ""),
+        Tours(counrty: "Новая Зеландия",
+            tour: "Приключения на Южном острове и съемочные площадки \"Властелина колец\"",
+            description: "Описание: Исследование живописных гор и озер Южного острова, а также посещение мест, где снимался \"Властелин колец\".",
+            image: "new zealand",
+            image2: "new zealand2",
+            timing: ""),
+        Tours(
+            counrty: "Швейцария",
+            tour: "Горные вершины и альпийские деревни",
+            description: "Описание: Поездка по живописным альпийским маршрутам, включая подъем на горы Маттерхорн и Юнгфрау.",
+            image: "switzerland",
+            image2: "switzerland2",
+            timing: ""),
+        Tours(
+            counrty: "Греция",
+            tour: "Острова Санторини и Миконос",
+            description: "Описание: Путешествие по живописным греческим островам с белыми домами, кристально чистыми пляжами и историческими руинами.", 
+            image: "greece",
+            image2: "greece2",
+            timing: ""),
+        Tours(
+            counrty: "Южная Африка",
+            tour: "Сафари в Крюгер-Парке и винодельни Кейптауна",
+            description: "Описание: Сафари в национальном парке Крюгер для наблюдения за \"большой пятеркой\" и посещение виноделен в окрестностях Кейптауна.",
+            image: "uar",
+            image2: "uar2",
+            timing: ""),
+        Tours(
+            counrty: "Норвегия",
+            tour: "Фьорды и Лофотенские острова",
+            description: "Описание: Круиз по фьордам Западной Норвегии с посещением живописных Лофотенских островов.", 
+            image: "norway",
+            image2: "norway2",
+            timing: ""),
+        Tours(
+            counrty: "Перу",
+            tour: "Мачу-Пикчу и Священная долина Инков",
+            description: "Описание: Экскурсия к древним руинам Мачу-Пикчу и исследование Священной долины с остановками в древних инкских городах.",
+            image: "peru",
+            image2: "peru2",
+            timing: ""),
     ]
+    
+    var timer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        startTimer ()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        let currentDate = Date()
+        let formattedDate = formatDate(date: currentDate)
+        print(formattedDate)
     }
+    
+    func formatDate(date: Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd.MM.yyyy HH:mm:ss" // Формат отображения даты до секунд
+        return dateFormatter.string(from: date)
+        }
+        
+    
     @IBAction func addTour(_ sender: Any) {
 //        arrayCountries.append("new country")
 //        arrayTours.append("new tour")
 //        arrayDescription.append("new description")
 //        arrayImage.append("newcountry")
 //        arrayImage2.append("touravatar")
-        arrayTours.append(Tours(counrty: "new country", tour: "new tour", description: "new description", image: "newcountry", image2: "touravatar"))
+        let currentDate = Date()
+            let formattedDate = formatDate(date: currentDate)
+        arrayTours.insert(
+            Tours(
+                counrty: "new country",
+                tour: "new tour",
+                description: "new description",
+                image: "newcountry",
+                image2: "touravatar", 
+                timing: formattedDate
+            ),
+            at: 0)
         tableView.reloadData()
     }
     
+    @objc func addTour2(){
+        let currentDate = Date()
+            let formattedDate = formatDate(date: currentDate)
+        arrayTours.insert(
+            Tours(
+                counrty: "new country",
+                tour: "new tour",
+                description: "new description",
+                image: "newcountry",
+                image2: "touravatar",
+                timing: formattedDate
+            ),
+            at: 0)
+        tableView.reloadData()
+    }
+    
+    func startTimer () {
+        timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(autoButtonTap), userInfo: nil, repeats: true)
+    }
+    
+    @objc func autoButtonTap() {
+        addTour2()
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -124,7 +230,10 @@ class TableViewController: UITableViewController {
         
         let label2 = cell.viewWithTag(1001) as! UILabel
         label2.text = arrayTours[indexPath.row].tour
-         
+        
+        let timing = cell.viewWithTag(1003) as! UILabel
+        timing.text = arrayTours[indexPath.row].timing
+        
         let imageView = cell.viewWithTag(1002) as! UIImageView
         imageView.image = UIImage(named: arrayTours[indexPath.row].image)
         
@@ -135,7 +244,7 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90
+        return 120
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
